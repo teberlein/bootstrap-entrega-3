@@ -61,17 +61,17 @@
       <h2>FAQs</h2>
       <div class="row">
         <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
         </div>
         <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ver" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo verlas?</button>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ver" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo verlas?</button>
         </div>
         <div class="col-sm-4">
-          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+          <button class="btn btn-outline-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
         </div>
       </div>
 
-      <div class="d-flex">
+      <div class="d-flex" style="margin-bottom: 50px;">
         <div class="col-sm-4 collapse multi-collapse card-faqs" id="funciona">
           <p>
             <h3>¿Cómo funciona?</h3>
@@ -92,6 +92,11 @@
         </div>
       </div>
 
+      <hr>
+      <div class="row">
+        <h3 class="col-sm-9" style="margin-top: 15px; margin-bottom: 15px;">¿Querés recibir toda la información sobre nuevos estrenos?</h3>
+        <button class="btn btn-outline-primary col-sm-3" type="button" data-bs-toggle="modal" data-bs-target="#newsletterModal">Suscribite a nuestro newsletter</button>
+      </div>
       <hr>
       
       <div class="row">
@@ -191,6 +196,38 @@
       </div>
       <hr>
     </div>
+
+<!-- Modal -->
+<div class="modal fade" id="newsletterModal" tabindex="-1" aria-labelledby="newsletterModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="newsletterModalLabel">Suscribite a nuestro newsletter</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="">
+          <div class="form-group">
+            <label for="recipient-name" class="col-form-label">Nombre</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="form-group">
+            <label for="recipient-lastName" class="col-form-label">Apellido</label>
+            <input type="text" class="form-control" id="recipient-lastName">
+          </div>
+          <div class="form-group">
+            <label for="recipient-email" class="col-form-label">Email</label>
+            <input type="email" class="form-control" id="recipient-email">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
     
     <footer>
