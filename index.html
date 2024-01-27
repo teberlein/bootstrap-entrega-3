@@ -103,7 +103,7 @@
         <div class="card card-movie d-flex flex-column justify-content-between">
           <img src="images/pulp-fiction.jpg" alt="" class="img-fluid card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Pulp Fiction</h5>
+            <h5 class="card-title">Pulp Fiction <i class="bi bi-award text-primary" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Ganadora de 1 premio Óscar" data-bs-title="Premiaciones"></i></h5>
             <h6 class="card-subtitle text-muted">Géneros: Crimen, Thriller</h6>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eius harum dolorum debitis iste, ad similique ullam quidem quasi nihil sed ducimus rerum nemo incidunt ut officia fugit tempora corporis.</p>
           </div>
@@ -185,7 +185,7 @@
         <div class="card card-movie d-flex flex-column justify-content-between">
           <img src="images/whiplash.jpg" alt="" class="img-fluid card-img-top">
           <div class="card-body">
-            <h5 class="card-title">Whiplash</h5>
+            <h5 class="card-title">Whiplash <i class="bi bi-award text-primary" data-bs-toggle="popover" data-bs-placement="top" data-bs-title="Premiaciones" data-bs-content="Ganadora de 3 premios Óscar"></i></h5>
             <h6 class="card-subtitle text-muted">Géneros: Música, Drama</h6>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus eius harum dolorum debitis iste, ad similique ullam quidem quasi nihil sed ducimus rerum nemo incidunt ut officia fugit tempora corporis.</p>
           </div>
@@ -228,7 +228,6 @@
     </div>
   </div>
 </div>
-
     
     <footer>
       <div class="row">
@@ -253,9 +252,15 @@
     </footer>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS, then tooltip, then popovers -->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script>const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+  const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))</script>
+  <script>
+  const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+  const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+  </script>
 </body>
 </html>
