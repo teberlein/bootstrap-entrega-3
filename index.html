@@ -59,20 +59,32 @@
       <hr>
       
       <h2>FAQs</h2>
+      <div class="row">
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#ver" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo verlas?</button>
+        </div>
+        <div class="col-sm-4">
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+        </div>
+      </div>
+
       <div class="d-flex">
-        <div class="col-sm-4 card-faqs">
+        <div class="col-sm-4 collapse multi-collapse card-faqs" id="funciona">
           <p>
             <h3>¿Cómo funciona?</h3>
             <p>Buscá las películas de acuerdo al genero que te interese</p>
           </p>
         </div>
-        <div class="col-sm-4 card-faqs">
+        <div class="col-sm-4 collapse multi-collapse card-faqs" id="ver">
           <p>
             <h3>¿Dónde puedo verlas?</h3>
             <p>Elegí la película que te interese y serás redireccionado a la plataforma en la que esté disponible</p>
           </p>
         </div>
-        <div class="col-sm-4 card-faqs">
+        <div class="col-sm-4 collapse multi-collapse card-faqs" id="pago">
           <p>
             <h3>¿Cómo pago?</h3>
             <p>Nuestro servicio de recomendación es totalmente gratuito. El pago de la membresia de los servicios de streaming dependerá de las políticas de cada plataformma</p>
