@@ -56,49 +56,124 @@
         </nav>
       <hr>
 
-      <h3>Precios</h3>
-        <div class="table-responsive">
-          <table class="table table-striped">
-            <thead class="table-dark">
-              <th>Plan</th>
-              <th>Netflix</th>
-              <th>Disney+</th>
-              <th>HBO Max</th>
-              <th>Amazon Prime</th>
-              <th>Apple TV</th>
-              <th>Star Plus</th>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Básico</td>
-                <td>$130</td>
-                <td>$120</td>
-                <td>$150</td>
-                <td>$90</td>
-                <td>$150</td>
-                <td>$115</td>
-              </tr>
-              <tr>
-                <td>Estándar</td>
-                <td>$180</td>
-                <td>$150</td>
-                <td>$190</td>
-                <td>$120</td>
-                <td>$175</td>
-                <td>$130</td>
-              </tr>
-              <tr>
-                <td>Premium</td>
-                <td>$250</td>
-                <td>$175</td>
-                <td>$200</td>
-                <td>$150</td>
-                <td>$210</td>
-                <td>$160</td>
-              </tr>
-            </tbody>
-          </table>
+      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-precios-tab" data-bs-toggle="pill" data-bs-target="#pills-precios" type="button" role="tab" aria-controls="pills-precios" aria-selected="true">Precios</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-tarjetas-tab" data-bs-toggle="pill" data-bs-target="#pills-tarjetas" type="button" role="tab" aria-controls="pills-tarjetas" aria-selected="false">Tarjetas</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Comentarios</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-precios" role="tabpanel" aria-labelledby="pills-precios-tab" tabindex="0">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="table-dark">
+                <th>Plan</th>
+                <th>Netflix</th>
+                <th>Disney+</th>
+                <th>HBO Max</th>
+                <th>Amazon Prime</th>
+                <th>Apple TV</th>
+                <th>Star Plus</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Básico</td>
+                  <td>$130</td>
+                  <td>$120</td>
+                  <td>$150</td>
+                  <td>$90</td>
+                  <td>$150</td>
+                  <td>$115</td>
+                </tr>
+                <tr>
+                  <td>Estándar</td>
+                  <td>$180</td>
+                  <td>$150</td>
+                  <td>$190</td>
+                  <td>$120</td>
+                  <td>$175</td>
+                  <td>$130</td>
+                </tr>
+                <tr>
+                  <td>Premium</td>
+                  <td>$250</td>
+                  <td>$175</td>
+                  <td>$200</td>
+                  <td>$150</td>
+                  <td>$210</td>
+                  <td>$160</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
+        <div class="tab-pane fade" id="pills-tarjetas" role="tabpanel" aria-labelledby="pills-tarjetas-tab" tabindex="0">
+          <div class="table-responsive">
+            <table class="table table-striped">
+              <thead class="table-dark">
+                <th>Servicio</th>
+                <th>Mastercard</th>
+                <th>Visa</th>
+                <th>American Express</th>
+                <th>PayPal</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Netflix</td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-x-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                </tr>
+                <tr>
+                  <td>Disney+</td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-x-lg"></i></td>
+                </tr>
+                <tr>
+                  <td>HBO Max</td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-x-lg"></i></td>
+                </tr>
+                <tr>
+                  <td>Amazon Prime</td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-x-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                </tr>
+                <tr>
+                  <td>Apple TV</td>
+                  <td><i class="bi bi-x-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                </tr>
+                <tr>
+                  <td>Star Plus</td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-check-lg"></i></td>
+                  <td><i class="bi bi-x-lg"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum perferendis unde natus neque consectetur architecto ut repellendus corrupti, tenetur recusandae ratione suscipit quis voluptatem nostrum, dolorem, doloribus a repellat quos!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint culpa eos, numquam exercitationem voluptates et consequatur voluptate nulla sunt veritatis veniam nobis distinctio, itaque aperiam labore debitis temporibus natus assumenda? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum labore, voluptatem, tempora ex possimus qui at reprehenderit quidem, distinctio nobis tenetur veritatis repellendus. Dignissimos, autem quam nihil aliquam aut sunt!</p>
+        </div>
+      </div>    
     </div>
       
 
